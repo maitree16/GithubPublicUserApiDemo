@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,11 +11,21 @@
 		B45F98C3261638CD00687090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F98C2261638CD00687090 /* AppDelegate.swift */; };
 		B45F98C5261638CD00687090 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F98C4261638CD00687090 /* SceneDelegate.swift */; };
 		B45F98C7261638CD00687090 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F98C6261638CD00687090 /* ViewController.swift */; };
-		B45F98CA261638CD00687090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45F98C8261638CD00687090 /* Main.storyboard */; };
 		B45F98CC261638CD00687090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45F98CB261638CD00687090 /* Assets.xcassets */; };
 		B45F98CF261638CD00687090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45F98CD261638CD00687090 /* LaunchScreen.storyboard */; };
 		B45F98DA261638CD00687090 /* GitHubUserPublicApiDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F98D9261638CD00687090 /* GitHubUserPublicApiDemoTests.swift */; };
 		B45F98E5261638CD00687090 /* GitHubUserPublicApiDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F98E4261638CD00687090 /* GitHubUserPublicApiDemoUITests.swift */; };
+		B45F990226163D0300687090 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F990126163D0300687090 /* ServiceManager.swift */; };
+		B45F990F26163DBB00687090 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F990A26163DBB00687090 /* DetailViewController.swift */; };
+		B45F991026163DBB00687090 /* PublicRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F990C26163DBB00687090 /* PublicRepo.swift */; };
+		B45F991126163DBB00687090 /* UserTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F990D26163DBB00687090 /* UserTableCell.swift */; };
+		B45F991226163DBB00687090 /* SearchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F990E26163DBB00687090 /* SearchListViewController.swift */; };
+		B45F991A26163E3300687090 /* Followers_model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F991726163E3300687090 /* Followers_model.swift */; };
+		B45F991B26163E3300687090 /* searchResponse_model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F991826163E3300687090 /* searchResponse_model.swift */; };
+		B45F991C26163E3300687090 /* Repository_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F991926163E3300687090 /* Repository_Model.swift */; };
+		B45F992826163EA100687090 /* UserTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45F992426163EA100687090 /* UserTableCell.xib */; };
+		B45F992926163EA100687090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45F992526163EA100687090 /* Main.storyboard */; };
+		B45F992A26163EA100687090 /* PublicRepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45F992726163EA100687090 /* PublicRepoCell.xib */; };
 		D4410840DEFEB6D82788AA90 /* Pods_GitHubUserPublicApiDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FEDA8DC0732106DE65D6F63 /* Pods_GitHubUserPublicApiDemo.framework */; };
 		FBA8330B59FB7D127D7449CC /* Pods_GitHubUserPublicApiDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D52799B9A3BE8E7DE8AFFF /* Pods_GitHubUserPublicApiDemoTests.framework */; };
 /* End PBXBuildFile section */
@@ -46,7 +56,6 @@
 		B45F98C2261638CD00687090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B45F98C4261638CD00687090 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B45F98C6261638CD00687090 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B45F98C9261638CD00687090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B45F98CB261638CD00687090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B45F98CE261638CD00687090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B45F98D0261638CD00687090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +65,17 @@
 		B45F98E0261638CD00687090 /* GitHubUserPublicApiDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubUserPublicApiDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45F98E4261638CD00687090 /* GitHubUserPublicApiDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserPublicApiDemoUITests.swift; sourceTree = "<group>"; };
 		B45F98E6261638CD00687090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B45F990126163D0300687090 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		B45F990A26163DBB00687090 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B45F990C26163DBB00687090 /* PublicRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicRepo.swift; sourceTree = "<group>"; };
+		B45F990D26163DBB00687090 /* UserTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableCell.swift; sourceTree = "<group>"; };
+		B45F990E26163DBB00687090 /* SearchListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchListViewController.swift; sourceTree = "<group>"; };
+		B45F991726163E3300687090 /* Followers_model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Followers_model.swift; sourceTree = "<group>"; };
+		B45F991826163E3300687090 /* searchResponse_model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchResponse_model.swift; sourceTree = "<group>"; };
+		B45F991926163E3300687090 /* Repository_Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository_Model.swift; sourceTree = "<group>"; };
+		B45F992426163EA100687090 /* UserTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableCell.xib; sourceTree = "<group>"; };
+		B45F992626163EA100687090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B45F992726163EA100687090 /* PublicRepoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PublicRepoCell.xib; sourceTree = "<group>"; };
 		B7D52799B9A3BE8E7DE8AFFF /* Pods_GitHubUserPublicApiDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubUserPublicApiDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2258FB84C5ED4E7879E6C5 /* Pods-GitHubUserPublicApiDemo-GitHubUserPublicApiDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubUserPublicApiDemo-GitHubUserPublicApiDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-GitHubUserPublicApiDemo-GitHubUserPublicApiDemoUITests/Pods-GitHubUserPublicApiDemo-GitHubUserPublicApiDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D84DE27769A266F83A6AE541 /* Pods-GitHubUserPublicApiDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubUserPublicApiDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-GitHubUserPublicApiDemoTests/Pods-GitHubUserPublicApiDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +121,6 @@
 				D84DE27769A266F83A6AE541 /* Pods-GitHubUserPublicApiDemoTests.debug.xcconfig */,
 				6AB3166AC1905041936F2150 /* Pods-GitHubUserPublicApiDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,10 +149,13 @@
 		B45F98C1261638CD00687090 /* GitHubUserPublicApiDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B45F990026163CBD00687090 /* NetworkLayer */,
+				B45F990926163DBB00687090 /* Controller */,
+				B45F991626163E3300687090 /* Model */,
+				B45F992326163EA100687090 /* View */,
 				B45F98C2261638CD00687090 /* AppDelegate.swift */,
 				B45F98C4261638CD00687090 /* SceneDelegate.swift */,
 				B45F98C6261638CD00687090 /* ViewController.swift */,
-				B45F98C8261638CD00687090 /* Main.storyboard */,
 				B45F98CB261638CD00687090 /* Assets.xcassets */,
 				B45F98CD261638CD00687090 /* LaunchScreen.storyboard */,
 				B45F98D0261638CD00687090 /* Info.plist */,
@@ -157,6 +179,53 @@
 				B45F98E6261638CD00687090 /* Info.plist */,
 			);
 			path = GitHubUserPublicApiDemoUITests;
+			sourceTree = "<group>";
+		};
+		B45F990026163CBD00687090 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B45F990126163D0300687090 /* ServiceManager.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		B45F990926163DBB00687090 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B45F990B26163DBB00687090 /* cell */,
+				B45F990A26163DBB00687090 /* DetailViewController.swift */,
+				B45F990E26163DBB00687090 /* SearchListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B45F990B26163DBB00687090 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				B45F990C26163DBB00687090 /* PublicRepo.swift */,
+				B45F990D26163DBB00687090 /* UserTableCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		B45F991626163E3300687090 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B45F991726163E3300687090 /* Followers_model.swift */,
+				B45F991826163E3300687090 /* searchResponse_model.swift */,
+				B45F991926163E3300687090 /* Repository_Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B45F992326163EA100687090 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B45F992426163EA100687090 /* UserTableCell.xib */,
+				B45F992526163EA100687090 /* Main.storyboard */,
+				B45F992726163EA100687090 /* PublicRepoCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D01A075150F312EEE4030A37 /* Frameworks */ = {
@@ -278,8 +347,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B45F98CF261638CD00687090 /* LaunchScreen.storyboard in Resources */,
+				B45F992826163EA100687090 /* UserTableCell.xib in Resources */,
 				B45F98CC261638CD00687090 /* Assets.xcassets in Resources */,
-				B45F98CA261638CD00687090 /* Main.storyboard in Resources */,
+				B45F992926163EA100687090 /* Main.storyboard in Resources */,
+				B45F992A26163EA100687090 /* PublicRepoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,9 +478,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45F991126163DBB00687090 /* UserTableCell.swift in Sources */,
 				B45F98C7261638CD00687090 /* ViewController.swift in Sources */,
+				B45F991B26163E3300687090 /* searchResponse_model.swift in Sources */,
+				B45F991226163DBB00687090 /* SearchListViewController.swift in Sources */,
 				B45F98C3261638CD00687090 /* AppDelegate.swift in Sources */,
+				B45F990F26163DBB00687090 /* DetailViewController.swift in Sources */,
 				B45F98C5261638CD00687090 /* SceneDelegate.swift in Sources */,
+				B45F991026163DBB00687090 /* PublicRepo.swift in Sources */,
+				B45F990226163D0300687090 /* ServiceManager.swift in Sources */,
+				B45F991A26163E3300687090 /* Followers_model.swift in Sources */,
+				B45F991C26163E3300687090 /* Repository_Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,20 +524,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B45F98C8261638CD00687090 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B45F98C9261638CD00687090 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B45F98CD261638CD00687090 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B45F98CE261638CD00687090 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B45F992526163EA100687090 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B45F992626163EA100687090 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
