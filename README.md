@@ -1,13 +1,6 @@
 # GithubPublicUserApiDemo
  This Project will display the Public Github Users and their details using Github Public API's.
 <br />
-<p align="center">
-    <img src="https://www.pngfind.com/pngs/m/574-5746652_axel-springer-logo-png-transparent-png.png" alt="Logo" width="700" height="150">
-  <p align="center">
-    This Project will display the Public Github Users and their details using Github Public API's.
-  </p>
-</p>
-
 
 <p align="center">
 <img src= "https://user-images.githubusercontent.com/52252385/109366608-23707e80-7894-11eb-80ae-cc7e7688e121.png" width="400" >
