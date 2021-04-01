@@ -2,7 +2,6 @@
  This Project will display the Public Github Users and their details using Github Public API's.
 <br />
 <p align="center">
-    <img src="https://www.pngfind.com/pngs/m/574-5746652_axel-springer-logo-png-transparent-png.png" alt="Logo" width="700" height="150">
   <p align="center">
     This Project will display the Public Github Users and their details using Github Public API's.
   </p>
